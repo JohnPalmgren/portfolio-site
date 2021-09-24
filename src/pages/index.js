@@ -1,5 +1,4 @@
 import * as React from "react";
-import Fragment from "react";
 import Layout from "../components/Layout";
 
 const header = <div>
