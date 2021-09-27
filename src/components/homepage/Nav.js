@@ -1,16 +1,19 @@
 import React from "react";
+import { header, list, listItem } from "./Nav.module.css"
 
 const Nav = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-      </ul>
+      <div className={header}>
+        <ul className={list}>
+          <li className={listItem}>
+            <a href="#">About</a>
+          </li>
+          <li className={listItem}>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
