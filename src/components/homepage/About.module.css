@@ -1,0 +1,14 @@
+.subtitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 9rem;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.card-wrapper {
+    margin: auto;
+    width: 80%;
+}
