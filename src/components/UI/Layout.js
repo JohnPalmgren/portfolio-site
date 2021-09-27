@@ -1,10 +1,17 @@
 import React, { Fragment } from "react";
+import { background, red, green, blue, content } from "./Layout.module.css";
+
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <Fragment >
+    <Fragment>
       <title>{pageTitle}</title>
-      <div>{children}</div>
+      <div className={background}>
+        <div className={red}></div>
+        <div className={green}></div>
+        <div className={blue}></div>
+        <div className={content}>{children}</div>
+      </div>
     </Fragment>
   );
 };
