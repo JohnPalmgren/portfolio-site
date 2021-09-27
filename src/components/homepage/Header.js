@@ -1,14 +1,25 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { header, title, subtitle, link } from "./Header.module.css";
+import linkedInImg from "../../images/linkedin.png"
+import githubImg from "../../images/github.png";
+import emailImg from "../../images/email.png";
+
 
 const Header = () => {
   return (
-    <Fragment>
-      <h1>John Palmgren</h1>
-      <h2>Web Developer</h2>
-      <a href="https://www.linkedin.com/in/john-p-6742aa40/">linkedin</a>
-      <a href="https://github.com/eniac01">github</a>
-      <a href="mailto:addemail@newemail.com">email</a>
-    </Fragment>
+    <div className={header}>
+      <h1 className={title}>John Palmgren</h1>
+      <h2 className={subtitle}>Web Developer</h2>
+      <a className={link} href="https://github.com/eniac01">
+        <img src={githubImg} alt="github logo" height="48px" width="48px" />
+      </a>
+      <a className={link} href="https://www.linkedin.com/in/john-p-6742aa40/">
+        <img src={linkedInImg} alt="linkedIn logo" height="48px" width="48px" />
+      </a>
+      <a className={link} href="mailto:addemail@newemail.com">
+        <img src={emailImg} alt="email logo" height="48px" width="48px" />
+      </a>
+    </div>
   );
 };
 
