@@ -16,7 +16,10 @@
   },
   "dependencies": {
     "gatsby": "^3.13.1",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "typeface-arimo": "^1.1.13",
+    "typeface-montserrat": "^1.1.13"
   }
 }
