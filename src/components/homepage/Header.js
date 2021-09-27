@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 const Header = () => {
   return (
     <Fragment>
+      <h1>John Palmgren</h1>
       <h2>Web Developer</h2>
       <a href="https://www.linkedin.com/in/john-p-6742aa40/">linkedin</a>
       <a href="https://github.com/eniac01">github</a>
