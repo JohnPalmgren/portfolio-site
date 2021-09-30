@@ -1,19 +1,52 @@
 import React from "react"
 import { Fragment } from "react"
+import { subtitle, list } from "./Projects.module.css"
+import foodAppImg from "../../images/food-app.png"
+import ProjectItemCard from "./ProjectItemCard"
+
+const projectsData = [
+  {
+    name: "Food ordering app",
+    code: "https://github.com/eniac01/Food-delivery-web-app",
+    link: "#",
+    date: "2021",
+    languages: ["React", "JavaScript", "CSS", "HTML"],
+    image: foodAppImg,
+    description: "",
+  },
+  {
+    name: "Food ordering app",
+    code: "https://github.com/eniac01/Food-delivery-web-app",
+    link: "#",
+    date: "2021",
+    languages: ["React", "JavaScript", "CSS", "HTML"],
+    image: foodAppImg,
+    description: "",
+  },
+];
 
 const Projects = () => {
+
+  const projects = projectsData.map((item) => {
+    return (
+        <li key={Math.random}>
+            <ProjectItemCard
+            name={item.name}
+            code={item.code}
+            link={item.link}
+            date={item.date}
+            languages={item.languages}
+            image={item.image}
+            description={item.description}
+            />
+          </li>
+  )})                
+
     return (
       <Fragment>
-        <h3>Projects</h3>
-        <ul>
-          <li>Food ordering app</li>
-          <li>Kanban Bord</li>
-          <li>Password Manager</li>
-          <li>To-Do app</li>
-          <li>Card Matching Game</li>
-          <li>Word analysis and web crawler</li>
-          <li>Computer Vision project</li>
-          <li>Weather app</li>
+        <h3 className={subtitle}>Projects</h3>
+        <ul className={list}>
+          {projects}
         </ul>
       </Fragment>
     );
