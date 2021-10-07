@@ -7,7 +7,7 @@ const About = () => {
     <Fragment>
       <h3 className={subtitle}>About me</h3>
       <div className={cardWrapper}>
-        <Card>
+        {/* <Card> */}
           <p className={paragraph}>
             I am a highly motivated web developer. I enjoy learning new
             programming concepts and have lots of experience working with other
@@ -18,7 +18,7 @@ const About = () => {
             feedback on coding problems and projects. In January I will be
             attending a Bath Spa University Web Development Bootcamp.
           </p>
-        </Card>
+        {/* </Card> */}
       </div>
     </Fragment>
   );
