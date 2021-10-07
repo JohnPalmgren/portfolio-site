@@ -34,7 +34,13 @@ const ProjectItemCard = (props) => {
         ) : (
           <span></span>
         )}
-        <a className={codeLink} title="code" href={props.code}>
+        <a
+          className={codeLink}
+          title="code"
+          href={props.code}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img alt="github" src={gitHub} />
         </a>
         <div className={languageWrapper}>

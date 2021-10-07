@@ -1,18 +1,20 @@
 import React from "react";
 import { header, list, listItem } from "./Nav.module.css"
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav>
       <div className={header}>
-        <ul className={list}>
+        <button onClick={props.aboutScroll}>About</button>
+        <button onClick={props.projectScroll}>Projects</button>
+        {/* <ul className={list}>
           <li className={listItem}>
             <a href="#">About</a>
           </li>
           <li className={listItem}>
             <a href="#">Projects</a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
