@@ -1,8 +1,8 @@
 import React from "react";
 import { header, title, subtitle, link } from "./Header.module.css";
-import linkedInImg from "../../images/linkedin.png"
-import githubImg from "../../images/github.png";
-import emailImg from "../../images/email.png";
+import linkedInImg from "../../images/icons/linkedin.png"
+import githubImg from "../../images/icons/github.png";
+import emailImg from "../../images/icons/email.png";
 
 
 const Header = () => {

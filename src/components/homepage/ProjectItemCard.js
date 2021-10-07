@@ -1,27 +1,51 @@
 import React from "react";
 import Card from "../UI/Card";
-import gitHub from "../../images/github.png"
-import globe from "../../images/globe.png"
-import { wrappingDiv, img, codeLink, liveLink } from "./ProjectItemCard.module.css"
+import gitHub from "../../images/icons/github.png";
+import globe from "../../images/icons/globe.png";
+import {
+  name,
+  wrappingDiv,
+  img,
+  codeLink,
+  liveLink,
+  date,
+  languagesHeading,
+  languageList,
+  languageWrapper,
+} from "./ProjectItemCard.module.css";
 
 const ProjectItemCard = (props) => {
+
+  let liveSite = props.link !== "none";
+
+  const languages = props.languages.map((item) => {
+    return <li key={Math.random()}>{item}</li>;
+  });
+
   return (
-    <div className={wrappingDiv}>
-      <Card>
-        <div>{props.name}</div>
+    <Card>
+      <div className={wrappingDiv}>
+        <div className={date}>{props.date}</div>
+        <h4 className={name}>{props.name}</h4>
+        {liveSite ? (
+          <a className={liveLink} title="live site" href={props.link}>
+            <img alt="live site" src={globe} />
+          </a>
+        ) : (
+          <span></span>
+        )}
         <a className={codeLink} title="code" href={props.code}>
           <img alt="github" src={gitHub} />
         </a>
-        <a className={liveLink} title="live site" href={props.link}>
-          <img alt="live site" src={globe} />
-        </a>
-        <div>{props.date}</div>
-        <div>{props.languages}</div>
+        <div className={languageWrapper}>
+          <h5 className={languagesHeading}>Languages</h5>
+          <ul className={languageList}>{languages}</ul>
+        </div>
         <div>{props.description}</div>
         <img className={img} alt={props.name} src={props.image} />
-      </Card>
-    </div>
+      </div>
+    </Card>
   );
 };
 
-export default ProjectItemCard
+export default ProjectItemCard;

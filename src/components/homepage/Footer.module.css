@@ -1,0 +1,29 @@
+.footer {
+    background-color: #8c8c8c;
+    padding: 1rem;
+    position: relative;
+}
+
+.content {
+    color: #fff;
+    font-family: montserrat; 
+    font-weight: bold;
+}
+
+.content span {
+    margin: 0 1rem 0 1rem;
+}
+
+.content img {
+    vertical-align: middle;
+}
+
+.social-media {
+    vertical-align: middle;
+    position: absolute;
+    right: 3rem;
+}
+
+.social-media a {
+    margin-left: 1rem;
+}
