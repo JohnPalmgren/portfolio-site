@@ -28,7 +28,13 @@ const ProjectItemCard = (props) => {
         <div className={date}>{props.date}</div>
         <h4 className={name}>{props.name}</h4>
         {liveSite ? (
-          <a className={liveLink} title="live site" href={props.link}>
+          <a
+            className={liveLink}
+            title="live site"
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img alt="live site" src={globe} />
           </a>
         ) : (

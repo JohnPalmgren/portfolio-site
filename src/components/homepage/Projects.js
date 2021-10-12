@@ -14,7 +14,7 @@ const projectsData = [
   {
     name: "Food ordering app",
     code: "https://github.com/eniac01/Food-delivery-web-app",
-    link: "#",
+    link: "https://eniac01.github.io/Food-delivery-web-app/",
     date: "2021",
     languages: ["React", "JavaScript", "CSS", "HTML"],
     image: foodAppImg,
@@ -22,7 +22,7 @@ const projectsData = [
   {
     name: "Kanban Board",
     code: "https://github.com/eniac01",
-    link: "#",
+    link: "https://eniac01.github.io/kanban-board/",
     date: "2021",
     languages: ["React", "JavaScript", "CSS", "HTML"],
     image: kanbanImg,
@@ -30,7 +30,7 @@ const projectsData = [
   {
     name: "Password Manager",
     code: "https://github.com/eniac01/password-manager",
-    link: "#",
+    link: "https://eniac01.github.io/password-manager/",
     date: "2021",
     languages: ["JavaScript", "CSS", "HTML"],
     image: passwordImg,
@@ -38,7 +38,7 @@ const projectsData = [
   {
     name: "Card Matching Game",
     code: "https://github.com/eniac01/Card-Matching-Game",
-    link: "#",
+    link: "https://eniac01.github.io/Card-Matching-Game/",
     date: "2021",
     languages: ["JavaScript", "CSS", "HTML"],
     image: cardGameImg,
