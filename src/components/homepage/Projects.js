@@ -64,7 +64,7 @@ const projectsData = [
     code: "https://github.com/eniac01/Political_Speech_Word_Counter",
     link: "none",
     date: "2020",
-    languages: ["Python"],
+    languages: ["Python", "SQL"],
     image: pythonImg,
   },
 ];
