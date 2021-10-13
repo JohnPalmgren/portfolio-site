@@ -1,35 +1,70 @@
-
 .red {
-    width: 25rem;
-    height: 25rem;
-    background-color: #874535;
-    border-radius: 25rem;
-    position: fixed;
-    bottom: -5rem;
-    right: -5rem;
+  width: 25rem;
+  height: 25rem;
+  background-color: #874535;
+  border-radius: 25rem;
+  position: fixed;
+  bottom: -5rem;
+  right: -5rem;
 }
 
 .blue {
-    width: 25rem;
-    height: 25rem;
-    background-color: #5c8ea9;
-    border-radius: 25rem;
-    position: fixed;
-    top: calc(50% - 9rem);
-    left: -5rem;
+  width: 25rem;
+  height: 25rem;
+  background-color: #5c8ea9;
+  border-radius: 25rem;
+  position: fixed;
+  top: calc(50% - 9rem);
+  left: -5rem;
 }
 
 .green {
-    width: 25rem;
-    height: 25rem;
-    background-color: #5a6e48;
-    border-radius: 25rem;
-    position: fixed;
-    top: -5rem;
-    right: -5rem;
+  width: 25rem;
+  height: 25rem;
+  background-color: #5a6e48;
+  border-radius: 25rem;
+  position: fixed;
+  top: -5rem;
+  right: -5rem;
 }
 
 .content {
-    position:absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .red {
+    right: -9rem;
+  }
+  .blue {
+      left: -9rem;
+  }
+  .green {
+      right: -9rem;
+  }
+}
+
+@media (max-width: 750px) {
+    .red {
+    right: -12rem;
+  }
+  .blue {
+      left: -12rem;
+  }
+  .green {
+      right: -12rem;
+  }
+}
+
+@media (max-width:650px) {
+      .red {
+    right: -18rem;
+  }
+  .blue {
+      left: -18rem;
+  }
+  .green {
+      right: -18rem;
+  }
 }
