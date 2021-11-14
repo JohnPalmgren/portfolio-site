@@ -10,8 +10,9 @@
     font-weight: bold;
 }
 
-.content span {
-    margin: 0 1rem 0 1rem;
+
+.content a {
+    margin-left: 1rem;
 }
 
 .content img {
@@ -26,4 +27,12 @@
 
 .social-media a {
     margin-left: 1rem;
+}
+
+@media (max-width: 650px) {
+    .content a {
+    margin: 0;
+    display: inline-block;
+    width: 60%;
+    }
 }
