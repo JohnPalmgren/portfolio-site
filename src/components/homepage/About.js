@@ -8,16 +8,18 @@ const About = () => {
       <h3 className={subtitle}>About me</h3>
       <div className={cardWrapper}>
         {/* <Card> */}
-          <p className={paragraph}>
-            I am a highly motivated web developer. I enjoy learning new
-            programming concepts and have lots of experience working with other
-            people in previous jobs. I spend at least 14 hours a week developing
-            my programming skills through courses and projects alongside my
-            day-job. I have completed 15 courses in Python and web development.
-            I am also part of an online community where I give and receive
-            feedback on coding problems and projects. In January I will be
-            attending a Bath Spa University Web Development Bootcamp.
-          </p>
+        <p className={paragraph}>
+          My greatist passion in life is learning new things whether that's
+          programming languages, foreign languages, or learning about philosophy
+          and psychology. My programming journey started 2 years ago when I
+          started learning Python. I was immediately hooked and loved the
+          creativity and problem solving involved with building my own tools.
+          Since then I have discovered the world of web development and I've 
+          fallen in love with building stuff for the web. I have built web pages,
+          games and web apps using a number of technologies. I'm currently having lots of 
+          fun building things in React. 
+
+        </p>
         {/* </Card> */}
       </div>
     </Fragment>
