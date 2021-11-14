@@ -5,6 +5,7 @@ import Header from "../components/homepage/Header";
 import Nav from "../components/homepage/Nav";
 import Projects from "../components/homepage/Projects";
 import About from "../components/homepage/About";
+import CurrentProject from "../components/homepage/CurrentProject"
 import Footer from "../components/homepage/Footer";
 
 const IndexPage = () => {
@@ -29,6 +30,7 @@ const IndexPage = () => {
       <div ref={scrollToAbout}></div>
       <About />
       <div ref={scrollToProjects}></div>
+      <CurrentProject />
       <Projects />
       <Footer />
     </Layout>
