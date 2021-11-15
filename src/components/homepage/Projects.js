@@ -1,6 +1,7 @@
 import React from "react"
 import { Fragment } from "react"
 import { subtitle, list, listItem } from "./Projects.module.css"
+import windBnbImg from "../../images/wind-bnb.png"
 import foodAppImg from "../../images/food-app.png"
 import kanbanImg from "../../images/kanban-board.png"
 import passwordImg from "../../images/password-manager.png"
@@ -11,6 +12,14 @@ import weatherAppImg from "../../images/weather-app.png"
 import ProjectItemCard from "./ProjectItemCard"
 
 const projectsData = [
+  {
+    name: "Holiday room finder",
+    code: "https://github.com/eniac01/Windbnb#built-with",
+    link: "https://eniac01.github.io/Windbnb/",
+    date: "2021",
+    languages: ["React", "JavaScript", "CSS", "HTML"],
+    image: windBnbImg
+  },
   {
     name: "Food ordering app",
     code: "https://github.com/eniac01/Food-delivery-web-app",
