@@ -9,7 +9,7 @@ const About = () => {
       <div className={cardWrapper}>
         {/* <Card> */}
         <p className={paragraph}>
-          My greatist passion in life is learning new things whether that's
+          My greatest passion in life is learning new things whether that's
           programming languages, foreign languages, or learning about philosophy
           and psychology. My programming journey started 2 years ago when I
           started learning Python. I was immediately hooked and loved the
