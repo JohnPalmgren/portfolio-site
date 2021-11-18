@@ -1,23 +1,59 @@
 .subtitle {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 6rem;
-    margin-bottom: 0rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 0rem;
+}
+
+@keyframes projects-animation {
+  from {
+    bottom: 150px;
+    visibility: visible;
+  }
+  to {
+    bottom: 0px;
+    visibility: visible;
+  }
 }
 
 .list-item {
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  min-width: 20rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  animation-name: projects-animation;
+  animation-timing-function: ease;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  .hide {
+    visibility: visible;
+    position: relative;
     display: inline-block;
     min-width: 20rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
-}
+  }
 
-.list {
-    list-style-type: none;
-    padding: 0;
-    margin:0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+  .list-item {
+    visibility: visible;
+    animation: none;
+  }
 }

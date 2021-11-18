@@ -1,15 +1,15 @@
-import React from "react"
-import { Fragment } from "react"
-import { subtitle, list, listItem } from "./Projects.module.css"
-import windBnbImg from "../../images/wind-bnb.png"
-import foodAppImg from "../../images/food-app.png"
-import kanbanImg from "../../images/kanban-board.png"
-import passwordImg from "../../images/password-manager.png"
-import cardGameImg from "../../images/card-game.png"
-import pythonImg from "../../images/python.jpg"
-import ComputerVisionImg from "../../images/computer-vision.png"
-import weatherAppImg from "../../images/weather-app.png"
-import ProjectItemCard from "./ProjectItemCard"
+import React, { Fragment } from "react";
+import { useInView } from "react-intersection-observer";
+import { subtitle, list, listItem, hide } from "./Projects.module.css";
+import windBnbImg from "../../images/wind-bnb.png";
+import foodAppImg from "../../images/food-app.png";
+import kanbanImg from "../../images/kanban-board.png";
+import passwordImg from "../../images/password-manager.png";
+import cardGameImg from "../../images/card-game.png";
+import pythonImg from "../../images/python.jpg";
+import ComputerVisionImg from "../../images/computer-vision.png";
+import weatherAppImg from "../../images/weather-app.png";
+import ProjectItemCard from "./ProjectItemCard";
 
 const projectsData = [
   {
@@ -18,7 +18,7 @@ const projectsData = [
     link: "https://eniac01.github.io/Windbnb/",
     date: "2021",
     languages: ["React", "JavaScript", "CSS", "HTML"],
-    image: windBnbImg
+    image: windBnbImg,
   },
   {
     name: "Food ordering app",
@@ -79,31 +79,39 @@ const projectsData = [
 ];
 
 const Projects = () => {
+  
+  const { ref, inView, entry } = useInView({threshold:0.2})
+  
+  let animationDelay = 0;
 
-  const projects = projectsData.map((item) => {
-    return (
-        <li className={listItem}
-            key={Math.random()}>
-            <ProjectItemCard
-            name={item.name}
-            code={item.code}
-            link={item.link}
-            date={item.date}
-            languages={item.languages}
-            image={item.image}
-            description={item.description}
-            />
-          </li>
-  )})                
+  const changeDelay = () => {
+    animationDelay += 500;
+    return `${animationDelay.toString()}ms`;
+  };
 
+  const projects = projectsData.map((item, i) => {
+    const delay = changeDelay();
     return (
-      <Fragment>
-        <h3 className={subtitle}>Projects</h3>
-        <ul className={list}>
-          {projects}
-        </ul>
-      </Fragment>
+      <li style={ inView ? { animationDelay: delay } : null} className={ inView ? listItem : hide} key={i}>
+        <ProjectItemCard
+          name={item.name}
+          code={item.code}
+          link={item.link}
+          date={item.date}
+          languages={item.languages}
+          image={item.image}
+          description={item.description}
+        />
+      </li>
     );
-}
+  });
 
-export default Projects
+  return (
+    <Fragment>
+      <h3 className={subtitle}>Projects</h3>
+      <ul className={list} ref={ref}>{projects}</ul>
+    </Fragment>
+  );
+};
+
+export default Projects;
