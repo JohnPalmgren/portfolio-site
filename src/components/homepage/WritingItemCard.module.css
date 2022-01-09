@@ -1,0 +1,13 @@
+.wrapping-div {
+  position: relative;
+  min-height: 9rem;
+}
+
+.image {
+  width:90%
+}
+
+.link {
+  text-decoration: none;
+  color:inherit;
+}
