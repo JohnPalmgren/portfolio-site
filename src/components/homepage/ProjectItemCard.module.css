@@ -1,10 +1,11 @@
-.img {
-  width: 50%;
-}
+/* .img {
+  width: 100%;
+} */
 
 .wrapping-div {
   position: relative;
-  min-height: 9rem;
+  height: 259px;
+  width: 420px;
 }
 
 @keyframes link-animation {
@@ -72,13 +73,14 @@
   flex-direction: column;
   align-items: flex-end;
   padding-right: 1rem;
+  padding-top: 2rem;
 }
 
 .img {
   position: absolute;
-  left: 0.5rem;
-  top: 2.5rem;
-  width: 60%;
-  max-width: 192.95px;
-  max-height: 97.913px;
+  left: 0.7rem;
+  top: 4.5rem;
+
+  max-width: 293px;
+  /* max-height: 194px; */
 }
