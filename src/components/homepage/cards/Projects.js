@@ -1,14 +1,15 @@
 import React, { Fragment } from "react";
 import { useInView } from "react-intersection-observer";
-import { subtitle, list, listItem, hide } from "./Projects.module.css";
-import windBnbImg from "../../images/wind-bnb.png";
-import foodAppImg from "../../images/food-app.png";
-import kanbanImg from "../../images/kanban-board.png";
-import passwordImg from "../../images/password-manager.png";
-import cardGameImg from "../../images/card-game.png";
-import pythonImg from "../../images/python.jpg";
-import ComputerVisionImg from "../../images/computer-vision.png";
-import weatherAppImg from "../../images/weather-app.png";
+import { subtitle, list, listItem, hide } from "./sharedCardStyles.module.css";
+
+import windBnbImg from "../../../images/wind-bnb.png";
+import foodAppImg from "../../../images/food-app.png";
+import kanbanImg from "../../../images/kanban-board.png";
+import passwordImg from "../../../images/password-manager.png";
+import cardGameImg from "../../../images/card-game.png";
+import pythonImg from "../../../images/python.jpg";
+import ComputerVisionImg from "../../../images/computer-vision.png";
+import weatherAppImg from "../../../images/weather-app.png";
 import ProjectItemCard from "./ProjectItemCard";
 
 const projectsData = [
@@ -80,7 +81,7 @@ const projectsData = [
 
 const Projects = () => {
   
-  const { ref, inView, entry } = useInView({threshold:0.2})
+  const { ref, inView, entry } = useInView({threshold:0})
   
   let animationDelay = 0;
 

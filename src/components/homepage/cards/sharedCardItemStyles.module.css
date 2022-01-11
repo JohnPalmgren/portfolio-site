@@ -1,10 +1,11 @@
 .wrapping-div {
-  position: relative;
-  min-height: 9rem;
+  height: 259px;
+  width: 420px;
 }
 
 .image {
-  width:90%
+  max-width:369px;
+  max-height: 180px;
 }
 
 .link {

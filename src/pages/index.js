@@ -3,9 +3,9 @@ import { useRef } from "react";
 import Layout from "../components/UI/Layout";
 import Header from "../components/homepage/Header";
 import Nav from "../components/homepage/Nav";
-import Projects from "../components/homepage/Projects";
-import Writing from "../components/homepage/Writing";
-import Courses from "../components/homepage/Courses"
+import Projects from "../components/homepage/cards/Projects";
+import Writing from "../components/homepage/cards/Writing";
+import Courses from "../components/homepage/cards/Courses"
 import About from "../components/homepage/About";
 import CurrentProject from "../components/homepage/CurrentProject"
 import Footer from "../components/homepage/Footer";

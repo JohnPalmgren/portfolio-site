@@ -1,6 +1,8 @@
 import React from "react"
-import Card from "../UI/Card"
-import { wrappingDiv, image, link } from "./WritingItemCard.module.css"
+import Card from "../../UI/Card";
+import { wrappingDiv, image, link } from "./sharedCardItemStyles.module.css"
+// import { image, link } from "./WritingItemCard.module.css"
+
 
 const WritingItemCard = (props) => {
     console.log("runs")

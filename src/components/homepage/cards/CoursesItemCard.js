@@ -1,6 +1,7 @@
 import React from "react";
-import Card from "../../components/UI/Card"
-import { wrappingDiv, image } from "./CourseItemCard.module.css"
+import Card from "../../../components/UI/Card";
+import { wrappingDiv, image } from "./sharedCardItemStyles.module.css"
+// import { image } from "./CourseItemCard.module.css"
 
 const CoursesItemCard = (props) => {
     console.log("runs")

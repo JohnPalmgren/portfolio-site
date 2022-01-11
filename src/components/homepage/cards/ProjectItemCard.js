@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../UI/Card";
-import gitHub from "../../images/icons/github.png";
-import globe from "../../images/icons/globe.png";
+import Card from "../../UI/Card";
+import gitHub from "../../../images/icons/github.png";
+import globe from "../../../images/icons/globe.png";
+import { wrappingDiv } from "./sharedCardItemStyles.module.css"
 import {
   name,
-  wrappingDiv,
   img,
   codeLink,
   liveLink,

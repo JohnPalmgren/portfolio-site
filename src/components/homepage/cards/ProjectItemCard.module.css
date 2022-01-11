@@ -1,12 +1,5 @@
-/* .img {
-  width: 100%;
-} */
 
-.wrapping-div {
-  position: relative;
-  height: 259px;
-  width: 420px;
-}
+
 
 @keyframes link-animation {
   100% {
@@ -80,7 +73,5 @@
   position: absolute;
   left: 0.7rem;
   top: 4.5rem;
-
-  max-width: 293px;
-  /* max-height: 194px; */
+  max-width: 300px;
 }
