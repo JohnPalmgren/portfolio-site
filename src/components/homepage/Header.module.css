@@ -1,17 +1,33 @@
 .header {
     text-align: center;
     margin-bottom: 4rem;
+    display: inline-block;
+}
+
+.image {
+    margin-left: 4rem;
+    height: 400px;
 }
 
 .title {
     font-size: 5rem;    
-    margin-top: 5rem;
+    color: #f5deb3;
+    /* margin-top: 5rem; */
 }
 
 .subtitle {
     font-size: 3rem;
+    color: #f5deb3
 }
 
 .link {
     margin: 0.5rem;
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
 }

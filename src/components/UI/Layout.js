@@ -6,9 +6,9 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <Fragment>
       <title>{pageTitle}</title>
-      <div className={red}></div>
+      {/* <div className={red}></div>
       <div className={green}></div>
-      <div className={blue}></div>
+      <div className={blue}></div> */}
       <div className={content}>{children}</div>
     </Fragment>
   );
