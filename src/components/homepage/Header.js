@@ -1,6 +1,16 @@
 import React from "react";
-import { Fragment } from "react";
-import { header, title, subtitle, link, image, flexContainer } from "./Header.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  header,
+  title,
+  subtitle,
+  link,
+  image,
+  flexContainer,
+  svg
+} from "./Header.module.css";
 import linkedInImg from "../../images/icons/linkedin.png";
 import githubImg from "../../images/icons/github.png";
 import emailImg from "../../images/icons/email.png";
@@ -16,11 +26,11 @@ const Header = () => {
         <a
           className={link}
           title="Github"
-          href="https://github.com/eniac01"
+          href="https://github.com/johnpalmgren"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubImg} alt="github logo" height="48px" width="48px" />
+          <FontAwesomeIcon icon={faGithub} className={svg} />
         </a>
         <a
           className={link}
@@ -29,19 +39,23 @@ const Header = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={linkedInImg}
-            alt="linkedIn logo"
-            height="48px"
-            width="48px"
-          />
+          <FontAwesomeIcon icon={faLinkedin} className={svg} />
+        </a>
+        <a
+          className={link}
+          title="Twitter"
+          href="https://twitter.com/john_palmgren"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faTwitter} className={svg} />
         </a>
         <a
           className={link}
           title="Email"
           href="mailto:johnpalmgrendev@outlook.com"
         >
-          <img src={emailImg} alt="email logo" height="48px" width="48px" />
+          <FontAwesomeIcon icon={faEnvelope} className={svg} />
         </a>
       </div>
     </div>
