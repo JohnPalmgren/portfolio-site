@@ -7,7 +7,6 @@ import {
   title,
   subtitle,
   link,
-  image,
   flexContainer,
   svg
 } from "./Header.module.css";

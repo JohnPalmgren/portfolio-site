@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react"
-import { header, navBar, headerScroll } from "./Nav.module.css"
+import { header, navBar, headerScroll, navList, menuButtonContainer, menuButton, menuToggle } from "./Nav.module.css"
 
 const Nav = (props) => {
 
@@ -19,11 +19,24 @@ window.addEventListener("scroll", changeNavbarColor);
   return (
     <nav className={navBar}>
       <div className={colorChange ? headerScroll : header}>
-        <ul></ul>
-        <button onClick={props.aboutScroll}>About</button>
-        <button onClick={props.projectScroll}>Projects</button>
-        <button onClick={props.writingScroll}>Writing</button>
+        <input id="menuToggle" type="checkbox" className={menuToggle} /> 
+        <label className={menuButtonContainer} for="menuToggle" >
+          <div className={menuButton}></div>
+        </label>
+        <ul className={navList}>
+          <li>
+            <button onClick={props.aboutScroll}>About</button>
+          </li>
+          <li>
+            <button onClick={props.projectScroll}>Projects</button>
+          </li>
+          <li>
+            <button onClick={props.writingScroll}>Writing</button>
+          </li>
+          <li>
         <button onClick={props.coursesScroll}>Courses</button>
+          </li>
+        </ul>
       </div>
     </nav>
   );

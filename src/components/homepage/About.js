@@ -4,8 +4,9 @@ import { subtitle, paragraph, background, contentWrapper, flexContainer, image }
 
 const About = () => {
   return (
-      <div className={flexContainer}>
+    <Fragment>
       <div className={background}></div>
+    <div className={flexContainer}>
         <div className={contentWrapper}>
           <h3 className={subtitle}>About me</h3>
           <p className={paragraph}>
@@ -29,6 +30,7 @@ const About = () => {
         </div>
         <img alt="profile image" src={profileImg} className={image} />
       </div>
+      </Fragment>
   );
 };
 
