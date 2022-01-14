@@ -1,13 +1,13 @@
 import * as React from "react";
 import { useRef } from "react";
 import Layout from "../components/UI/Layout";
+import Video from "../components/UI/Video"
 import Header from "../components/homepage/Header";
 import Nav from "../components/homepage/Nav";
 import Projects from "../components/homepage/cards/Projects";
 import Writing from "../components/homepage/cards/Writing";
 import Courses from "../components/homepage/cards/Courses";
 import About from "../components/homepage/About";
-import CurrentProject from "../components/homepage/CurrentProject";
 import Footer from "../components/homepage/Footer";
 
 const IndexPage = () => {
@@ -34,6 +34,7 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="John Palmgren">
+      <Video />
       {/* scroll to not accurate */}
       <Nav
         projectScroll={projectScrollEvent}
@@ -44,7 +45,6 @@ const IndexPage = () => {
       <Header />
       <div ref={scrollToAbout}></div>
       <About />
-      <CurrentProject />
       <div ref={scrollToProjects}></div>
       <Projects />
       <div ref={scrollToWriting}></div>

@@ -1,17 +1,26 @@
-html, 
+html,
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-    background-color:#1b2c82;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #1b2c82;
 }
 
 p {
-    font-family: montserrat;
+  font-family: montserrat;
+  color: #f5deb3;
+  font-size: 1.2rem;
 }
 
-h1, h2, h3, h4 {
-    font-family: arimo;
+h1,
+h2,
+h3 {
+  font-family: arimo;
+  color: #ffbd59;
+}
+
+h4 {
+  font-family: arimo;
 }

@@ -1,7 +1,6 @@
 .subtitle {
     font-size: 2rem;
     text-align: center;
-    margin-top: 5rem;
 }
 
 .paragraph {
@@ -9,7 +8,32 @@
     font-weight: bold;
 }
 
-.card-wrapper {
+
+.background {
+    background-image: linear-gradient(#011646, #1b2c82);
+    width:100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.contentWrapper {
+    width:60%;
+}
+
+.contentWrapper p {
     margin: auto;
-    width: 80%;
+}
+
+.flexContainer {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image {
+    height: 400px;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../UI/Card";
-import gitHub from "../../../images/icons/github.png";
-import globe from "../../../images/icons/globe.png";
+import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { wrappingDiv } from "./sharedCardItemStyles.module.css"
 import {
   name,
@@ -12,7 +12,9 @@ import {
   languagesHeading,
   languageList,
   languageWrapper,
+  fa
 } from "./ProjectItemCard.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectItemCard = (props) => {
 
@@ -35,7 +37,7 @@ const ProjectItemCard = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img alt="live site" src={globe} />
+            <FontAwesomeIcon icon={faGlobe} size="2x" className={fa} />
           </a>
         ) : (
           <span></span>
@@ -47,7 +49,7 @@ const ProjectItemCard = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img alt="github" src={gitHub} />
+          <FontAwesomeIcon icon={faGithub} size="2x" className={fa} />
         </a>
         <div className={languageWrapper}>
           <h5 className={languagesHeading}>Languages</h5>

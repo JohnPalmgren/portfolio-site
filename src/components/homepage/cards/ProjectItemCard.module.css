@@ -1,36 +1,30 @@
-
-
-
 @keyframes link-animation {
   100% {
-    width: 1.9rem;
+    width: 2.9rem;
+    height: 2.9rem;
   }
 }
 
-.code-link img {
-  width: 1.5rem;
+
+.fa {
+  color: #1b2c82;
 }
 
-.code-link img:hover {
-  animation: link-animation 1s forwards;
+.fa:hover {
+  animation: link-animation .5s forwards;
 }
 
-.live-link img {
-  width: 1.5rem;
-}
-
-.live-link img:hover {
-  animation: link-animation 1s forwards;
-}
 
 .live-link {
   position: absolute;
-  right: 2.5rem;
+  right: 3.5rem;
+  padding-top: 0.5rem;
 }
 
 .code-link {
   position: absolute;
   right: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .name {

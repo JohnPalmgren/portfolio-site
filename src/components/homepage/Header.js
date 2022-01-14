@@ -19,7 +19,7 @@ import profileImg from "../../images/face.png";
 const Header = () => {
   return (
     <div className={flexContainer}>
-      <img alt="profile image" src={profileImg} className={image} />
+      {/* <img alt="profile image" src={profileImg} className={image} /> */}
       <div className={header}>
         <h1 className={title}>John Palmgren</h1>
         <h2 className={subtitle}>Web Developer</h2>
