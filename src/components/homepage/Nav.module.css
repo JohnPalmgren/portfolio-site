@@ -83,3 +83,8 @@
   font-size: 1.3rem;
   margin-right: 0.5rem;
 }
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
