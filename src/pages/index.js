@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useRef } from "react";
+import { useRef, Fragment } from "react";
 import Layout from "../components/UI/Layout";
 import Video from "../components/UI/Video"
 import Header from "../components/homepage/Header";
@@ -34,6 +34,7 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="John Palmgren">
+     {/* <Fragment> */}
       <Video />
       {/* scroll to not accurate */}
       <Nav
@@ -53,6 +54,7 @@ const IndexPage = () => {
       <Courses />
       <Footer />
     </Layout>
+    //  </Fragment>
   );
 };
 
