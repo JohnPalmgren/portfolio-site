@@ -10,7 +10,6 @@ import {
   flexContainer,
   svg
 } from "./Header.module.css";
-import linkedInImg from "../../images/icons/linkedin.png";
 import githubImg from "../../images/icons/github.png";
 import emailImg from "../../images/icons/email.png";
 import profileImg from "../../images/face.png";
