@@ -45,26 +45,50 @@
 
 .language-list {
   list-style: none;
-  margin: 0;
+  margin-top: 2rem;
   padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-top: 2rem;
+}
+
+.language-list li {
+  font-weight: bold;
 }
 
 .languages-heading {
   margin-bottom: 0.2rem;
 }
 
-.language-wrapper {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 1rem;
-  padding-top: 2rem;
-}
 
 .img {
-  position: absolute;
+  /* position: absolute;
   left: 0.7rem;
-  top: 4.5rem;
+  top: 4.5rem; */
   max-width: 300px;
+  padding-top: 3rem;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 480px) {
+  .flexContainer {
+    flex-direction: column-reverse;
+  }
+
+  .language-list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:1rem;
+  }
+
+  .img {
+    padding-top: 1rem;
+    margin: auto;
+  }
 }

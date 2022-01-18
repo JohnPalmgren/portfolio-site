@@ -101,7 +101,6 @@ const Projects = () => {
           date={item.date}
           languages={item.languages}
           image={item.image}
-          description={item.description}
         />
       </li>
     );

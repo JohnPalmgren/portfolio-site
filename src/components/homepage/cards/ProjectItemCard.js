@@ -12,7 +12,8 @@ import {
   languagesHeading,
   languageList,
   languageWrapper,
-  fa
+  fa,
+  flexContainer
 } from "./ProjectItemCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -51,12 +52,10 @@ const ProjectItemCard = (props) => {
         >
           <FontAwesomeIcon icon={faGithub} size="2x" className={fa} />
         </a>
-        <div className={languageWrapper}>
-          <h5 className={languagesHeading}>Languages</h5>
+        <div className={flexContainer}>
+          <img className={img} alt={props.name} src={props.image} />
           <ul className={languageList}>{languages}</ul>
         </div>
-        <div>{props.description}</div>
-        <img className={img} alt={props.name} src={props.image} />
       </div>
     </Card>
   );

@@ -42,7 +42,11 @@
   visibility: hidden;
 }
 
-@media (max-width: 600px) {
+/* @media only screen and (max-width: 480px) {
+
+} */
+
+@media only screen and (max-width: 600px) {
   .hide {
     visibility: visible;
     position: relative;
@@ -56,5 +60,4 @@
     visibility: visible;
     animation: none;
   }
-
 }

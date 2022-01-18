@@ -1,13 +1,17 @@
 .footer {
-    background-color: #8c8c8c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffbd59;
     padding: 1rem;
-    position: relative;
 }
 
-.content {
-    color: #fff;
+.content p {
+    display: inline-block;
+    color: #1b2c82;
     font-family: montserrat; 
     font-weight: bold;
+    vertical-align: middle;
 }
 
 
@@ -21,18 +25,37 @@
 
 .social-media {
     vertical-align: middle;
-    position: absolute;
-    right: 3rem;
+
 }
 
 .social-media a {
     margin-left: 1rem;
 }
 
-@media (max-width: 650px) {
-    .content a {
+.social-media:last-child {
+    margin-right: 2rem;
+}
+
+.social-icon {
+    color: #1b2c82;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .content a,
+    .content p {
     margin: 0;
     display: inline-block;
-    width: 60%;
     }
+
+    .social-media {
+        width: 100px;
+    }
+
+    .social-icon {
+        margin-top: 0.8rem;
+    }
+
 }

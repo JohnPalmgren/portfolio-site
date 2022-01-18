@@ -1,6 +1,13 @@
 import React from "react";
-import { footer, content, socialMedia } from "./Footer.module.css";
-import gatsbyLogo from "../../images/gatsby-logo.png"
+import { footer, content, socialMedia, socialIcon } from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import gatsbyLogo from "../../images/icons/gatsbyLogo.png"
 import githubLogo from "../../images/icons/github-white.png" 
 import linkedInLogo from "../../images/icons/linkedin-white.png"
 import emailLogo from "../../images/icons/email-white.png"
@@ -9,13 +16,14 @@ const Footer = () => {
   return (
     <div className={footer}>
       <span className={content}>
-        <span>John Palmgren Portfolio — Powered by</span>
+        <p>Powered by</p>
         <a
           href="https://www.gatsbyjs.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={gatsbyLogo} alt="Gatsby Logo" width="100"></img>
+          <img src={gatsbyLogo} alt="Gatsby Logo" width="120"></img>
+
         </a>
       </span>
       <span className={socialMedia}>
@@ -25,7 +33,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubLogo} alt="github logo" height="28" width="28" />
+          <FontAwesomeIcon icon={faGithub} className={socialIcon} />
         </a>
         <a
           title="LinkedIn"
@@ -33,10 +41,18 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={linkedInLogo} alt="linkedIn logo" height="28" width="28" />
+          <FontAwesomeIcon icon={faLinkedin} className={socialIcon} />
+        </a>
+        <a
+          title="Twitter"
+          href="https://twitter.com/john_palmgren"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faTwitter} className={socialIcon} />
         </a>
         <a title="Email" href="mailto:johnpalmgrendev@outlook.com">
-          <img src={emailLogo} alt="email logo" height="28" width="28" />
+          <FontAwesomeIcon icon={faEnvelope} className={socialIcon} />
         </a>
       </span>
     </div>
