@@ -34,7 +34,7 @@ const Header = () => {
         <a
           className={link}
           title="LinkedIn"
-          href="https://www.linkedin.com/in/john-p-6742aa40/"
+          href="https://www.linkedin.com/in/johnpalmgren/"
           target="_blank"
           rel="noopener noreferrer"
         >
