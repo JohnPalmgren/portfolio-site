@@ -9,11 +9,13 @@ import {
   menuButton,
   menuToggle,
   menuButtonScroll,
-  navListScroll
+  navListScroll,
 } from "./Nav.module.css";
 
 const Nav = (props) => {
   const [colorChange, setColorchange] = useState(false);
+
+  const isBrowser = () => typeof window !== "undefined";
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -22,7 +24,7 @@ const Nav = (props) => {
       setColorchange(false);
     }
   };
-  window.addEventListener("scroll", changeNavbarColor);
+  isBrowser() && window.addEventListener("scroll", changeNavbarColor);
 
   return (
     <nav className={navBar}>
