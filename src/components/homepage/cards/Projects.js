@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { subtitle, list, listItem, hide } from "./sharedCardStyles.module.css";
 
@@ -80,9 +80,9 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  
-  const { ref, inView, entry } = useInView({threshold:0})
-  
+  const { ref, inView, entry } = useInView({ threshold: 0 });
+  const [onView, setOnView] = useState(false);
+
   let animationDelay = 0;
 
   const changeDelay = () => {
@@ -90,10 +90,25 @@ const Projects = () => {
     return `${animationDelay.toString()}ms`;
   };
 
+  /*
+    Sets onView to true the first time the ref (ul) enters the viewport
+    Apply animation class to li only the first time it comes in view
+    */
+  useEffect(() => {
+    if (inView) {
+      setOnView(true);
+    }
+  }, [inView]);
+
+
   const projects = projectsData.map((item, i) => {
     const delay = changeDelay();
     return (
-      <li style={ inView ? { animationDelay: delay } : null} className={ inView ? listItem : hide} key={i}>
+      <li
+        style={inView ? { animationDelay: delay } : null}
+        className={onView ? listItem : hide}
+        key={i}
+      >
         <ProjectItemCard
           name={item.name}
           code={item.code}
@@ -109,7 +124,9 @@ const Projects = () => {
   return (
     <Fragment>
       <h3 className={subtitle}>Projects</h3>
-      <ul className={list} ref={ref}>{projects}</ul>
+      <ul className={list} ref={ref}>
+        {projects}
+      </ul>
     </Fragment>
   );
 };

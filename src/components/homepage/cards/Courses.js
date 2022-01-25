@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { subtitle, list, listItem, hide } from "./sharedCardStyles.module.css";
 import CoursesItemCard from "./CoursesItemCard";
@@ -64,6 +64,7 @@ const coursesData = [
 
 const Courses = () => {
   const { ref, inView, entry } = useInView({ threshold: 0 });
+  const [onView, setOnView] = useState(false);
 
   let animationDelay = 0;
 
@@ -72,13 +73,23 @@ const Courses = () => {
     return `${animationDelay.toString()}ms`;
   };
 
+  /*
+    Sets onView to true the first time the ref (ul) enters the viewport
+    Apply animation class to li only the first time it comes in view
+    */
+  useEffect(() => {
+    if (inView) {
+      setOnView(true);
+    }
+  }, [inView]);
+
   const courses = coursesData.map((item, i) => {
     const delay = changeDelay();
 
     return (
       <li
         style={inView ? { animationDelay: delay } : null}
-        className={inView ? listItem : hide}
+        className={onView ? listItem : hide}
         key={i}
       >
         <CoursesItemCard

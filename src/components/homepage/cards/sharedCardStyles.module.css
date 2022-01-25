@@ -20,7 +20,6 @@
   position: relative;
   display: inline-block;
   visibility: hidden;
-  /* min-width: 20rem; */
   margin-top: 3rem;
   margin-bottom: 1rem;
   animation-name: projects-animation;
@@ -28,6 +27,8 @@
   animation-duration: 1000ms;
   animation-fill-mode: forwards;
 }
+
+
 
 .list {
   list-style-type: none;

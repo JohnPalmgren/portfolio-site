@@ -5,7 +5,6 @@ import { wrappingDiv, image, link } from "./sharedCardItemStyles.module.css"
 
 
 const WritingItemCard = (props) => {
-    console.log("runs")
     return (
       <Card>
         <a href={props.url} className={link} target="_blank">
