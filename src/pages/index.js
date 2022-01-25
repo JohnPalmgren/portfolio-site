@@ -43,13 +43,13 @@ const IndexPage = () => {
         coursesScroll={coursesScrollEvent}
       />
       <Header aboutScroll={aboutScrollEvent} />
-      <div ref={scrollToAbout}>about************************************</div>
+      <div ref={scrollToAbout}></div>
       <About />
-      <div ref={scrollToProjects}>project************************************</div>
+      <div ref={scrollToProjects}></div>
       <Projects />
-      <div ref={scrollToWriting}>writing************************************</div>
+      <div ref={scrollToWriting}></div>
       <Writing />
-      <div ref={scrollToCourses}>course************************************</div>
+      <div ref={scrollToCourses}></div>
       <Courses />
       <Footer />
     </Layout>
