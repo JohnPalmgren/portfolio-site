@@ -34,7 +34,6 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="John Palmgren">
-     {/* <Fragment> */}
       <Video />
       {/* scroll to not accurate */}
       <Nav
@@ -43,7 +42,7 @@ const IndexPage = () => {
         writingScroll={writingScrollEvent}
         coursesScroll={coursesScrollEvent}
       />
-      <Header />
+      <Header aboutScroll={aboutScrollEvent} />
       <div ref={scrollToAbout}></div>
       <About />
       <div ref={scrollToProjects}></div>
@@ -54,7 +53,6 @@ const IndexPage = () => {
       <Courses />
       <Footer />
     </Layout>
-    //  </Fragment>
   );
 };
 

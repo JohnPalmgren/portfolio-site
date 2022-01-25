@@ -8,7 +8,7 @@
 .title {
     font-size: 5rem;    
     color: #f5deb3;
-    /* margin-top: 5rem; */
+    margin-bottom:0;
 }
 
 .subtitle {
@@ -31,6 +31,19 @@
 
 .svg {
     color: #ffbd59;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-right: .6rem;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 85vh;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.scroll-button img {
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px #000;
 }

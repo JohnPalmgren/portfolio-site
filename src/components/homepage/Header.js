@@ -8,16 +8,17 @@ import {
   subtitle,
   link,
   flexContainer,
-  svg
+  svg,
+  scrollButton
 } from "./Header.module.css";
+import scrollImage from "../../images/icons/scroll.png"
 import githubImg from "../../images/icons/github.png";
 import emailImg from "../../images/icons/email.png";
 import profileImg from "../../images/face.png";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className={flexContainer}>
-      {/* <img alt="profile image" src={profileImg} className={image} /> */}
       <div className={header}>
         <h1 className={title}>John Palmgren</h1>
         <h2 className={subtitle}>Web Developer</h2>
@@ -56,6 +57,9 @@ const Header = () => {
           <FontAwesomeIcon icon={faEnvelope} className={svg} />
         </a>
       </div>
+      <button onClick={props.aboutScroll} className={scrollButton} >
+        <img src={scrollImage} alt="scroll" />
+      </button>
     </div>
   );
 };
