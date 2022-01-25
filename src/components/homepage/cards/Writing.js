@@ -46,7 +46,7 @@ const Writing = () => {
         const delay = changeDelay();
         return (
           <li
-            style={inView ? { animationDelay: delay } : null }
+            style={inView ? { animationDelay: delay } : null}
             className={inView ? listItem : hide}
             key={i}
           >

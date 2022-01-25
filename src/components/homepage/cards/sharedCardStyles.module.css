@@ -7,7 +7,7 @@
 
 @keyframes projects-animation {
   from {
-    bottom: 150px;
+    bottom: 100px;
     visibility: visible;
   }
   to {
@@ -20,7 +20,6 @@
   position: relative;
   display: inline-block;
   visibility: hidden;
-  /* min-width: 20rem; */
   margin-top: 3rem;
   margin-bottom: 1rem;
   animation-name: projects-animation;
@@ -39,7 +38,11 @@
 }
 
 .hide {
+  position: relative;
+  display: inline-block;
   visibility: hidden;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* @media only screen and (max-width: 480px) {
