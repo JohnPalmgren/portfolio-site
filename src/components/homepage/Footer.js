@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import gatsbyLogo from "../../images/icons/gatsbyLogo.png"
+import netlifyLogo from "../../images/icons/netlifyLogo.png"
 import githubLogo from "../../images/icons/github-white.png" 
 import linkedInLogo from "../../images/icons/linkedin-white.png"
 import emailLogo from "../../images/icons/email-white.png"
@@ -23,7 +24,13 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img src={gatsbyLogo} alt="Gatsby Logo" width="120"></img>
-
+        </a>
+        <a
+          href="https://www.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={netlifyLogo} alt="Netlify Logo" width="120"></img>
         </a>
       </span>
       <span className={socialMedia}>

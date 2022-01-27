@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffbd59;
-    padding: 1rem;
+    padding: .8rem;
+    margin-top: 5rem;
 }
 
 .content p {
