@@ -52,7 +52,7 @@ const Header = (props) => {
         <a
           className={link}
           title="Email"
-          href="mailto:johnpalmgrendev@outlook.com"
+          href="mailto:contact@johnpalmgren.co.uk"
         >
           <FontAwesomeIcon icon={faEnvelope} className={svg} />
         </a>
