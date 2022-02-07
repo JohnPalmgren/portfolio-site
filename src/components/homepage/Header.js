@@ -9,7 +9,7 @@ import {
   link,
   flexContainer,
   svg,
-  scrollButton
+  scrollDown,
 } from "./Header.module.css";
 import scrollImage from "../../images/icons/scroll.png"
 import githubImg from "../../images/icons/github.png";
@@ -57,9 +57,9 @@ const Header = (props) => {
           <FontAwesomeIcon icon={faEnvelope} className={svg} />
         </a>
       </div>
-      <button onClick={props.aboutScroll} className={scrollButton} >
-        <img src={scrollImage} alt="scroll" />
-      </button>
+        <button onClick={props.aboutScroll} className={scrollDown}>
+            <span></span>
+        </button>
     </div>
   );
 };
