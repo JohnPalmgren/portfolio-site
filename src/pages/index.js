@@ -8,6 +8,7 @@ import Projects from "../components/homepage/cards/Projects";
 import Writing from "../components/homepage/cards/Writing";
 import Courses from "../components/homepage/cards/Courses";
 import About from "../components/homepage/About";
+import Skills from "../components/homepage/Skills"
 import Footer from "../components/homepage/Footer";
 
 const IndexPage = () => {
@@ -45,6 +46,7 @@ const IndexPage = () => {
       <Header aboutScroll={aboutScrollEvent} />
       <div ref={scrollToAbout}></div>
       <About />
+      <Skills />
       <div ref={scrollToProjects}></div>
       <Projects />
       <div ref={scrollToWriting}></div>

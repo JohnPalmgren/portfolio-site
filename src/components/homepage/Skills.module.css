@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-color: #1b2c82;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 320px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 50px;
+  background: #1b2c82;
+  box-shadow: inset 14px 14px 46px #121d55, inset -14px -14px 46px #243bb0;
+}
+
+.flex-container div img {
+  height: 150px;
+  width: 150px;
+}
+
+
+.flex-container div p {
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+
+.communication img {
+  padding-top: 10px;
+}
+
+/* prevent overlapping content on small viewport due to height:100vh */
+@media screen and (max-width: 1098px) {
+  .flex-container {
+    height: fit-content;
+  }
+}
