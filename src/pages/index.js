@@ -9,7 +9,7 @@ import Writing from "../components/homepage/cards/Writing";
 import Courses from "../components/homepage/cards/Courses";
 import About from "../components/homepage/About";
 import Skills from "../components/homepage/Skills"
-import Footer from "../components/homepage/Footer";
+import Footer from "../components/UI/Footer";
 
 const IndexPage = () => {
   const scrollToProjects = useRef();
@@ -36,7 +36,6 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="John Palmgren">
       <Video />
-      {/* scroll to not accurate */}
       <Nav
         projectScroll={projectScrollEvent}
         aboutScroll={aboutScrollEvent}

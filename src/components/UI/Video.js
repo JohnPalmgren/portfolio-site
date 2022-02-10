@@ -6,7 +6,7 @@ import { backgroundVideo } from "./Video.module.css"
 const Video = () => {
   return (
     <div>
-    <video className={backgroundVideo} autoplay="autoplay" loop muted poster={poster}>
+    <video className={backgroundVideo} autoPlay="autoplay" loop muted poster={poster}>
       <source src={background} type="video/mp4" />
     </video>
     </div>

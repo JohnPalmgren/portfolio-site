@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card:first-child {
+    margin-top: 150px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffae;
+    width:60%;
+    max-width: 1200px;
+    margin:40px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 8px #000;
+}
+
+.card img{
+    max-width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.card p, h1 {
+    text-align:center;
+    margin: 20px;;
+    color: #000;
+}
