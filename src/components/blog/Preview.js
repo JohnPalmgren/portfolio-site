@@ -19,7 +19,7 @@ import strict from "../../images/blog/strict.jpg"
 
 const blogPreviewData = [
   {
-    name: "How does JavaScript strict mode prevent bad practice",
+    name: "How does JavaScript strict mode prevent bad practice?",
     description:
       "Strict mode is a way to make JavaScript errors more obvious. It can make the code more optimized for performance and prevent some security vulnerabilities.",
     image: strict,
@@ -125,6 +125,7 @@ const blogPreviewData = [
 ];
 
 const Preview = () => {
+
   const previews = blogPreviewData.map((item) => {
     return (
       <div className={card}>
@@ -139,7 +140,7 @@ const Preview = () => {
     <Fragment>
       <GenNav>
         <li><button>Catagories</button></li>
-        <li><button>My Portfolio</button></li>
+        <li><button>Web-Dev Portfolio</button></li>
       </GenNav>
       <div className={flexContainer}>{previews}</div>
       <Footer />
