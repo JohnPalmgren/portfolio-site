@@ -10,6 +10,9 @@ import Courses from "../components/homepage/cards/Courses";
 import About from "../components/homepage/About";
 import Skills from "../components/homepage/Skills"
 import Footer from "../components/UI/Footer";
+import FeaturedProjects from "../components/homepage/FeaturedProjects";
+import FeaturedWriting from "../components/homepage/FeaturedWriting";
+import FeaturedCourses from "../components/homepage/FeaturedCourses";
 
 const IndexPage = () => {
   const scrollToProjects = useRef();
@@ -47,10 +50,13 @@ const IndexPage = () => {
       <About />
       <Skills />
       <div ref={scrollToProjects}></div>
+      <FeaturedProjects />
       <Projects />
       <div ref={scrollToWriting}></div>
+      <FeaturedWriting />
       <Writing />
       <div ref={scrollToCourses}></div>
+      <FeaturedCourses />
       <Courses />
       <Footer />
     </Layout>
