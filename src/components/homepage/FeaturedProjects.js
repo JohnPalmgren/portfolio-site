@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import { container, box, content, gif, list, templateHeading, heading, buttons } from "./FeaturedProject.module.css";
 import jamdownGif from "../../images/jamdown.gif"
 import windbnbGif from "../../images/windbnb.gif"
@@ -87,9 +88,7 @@ const FeaturedProjects = () => {
           </div>
           <div className={buttons}>
             <button>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                See all projects
-              </a>
+              <Link to="/projects">See all projects</Link>
             </button>
           </div>
         </div>

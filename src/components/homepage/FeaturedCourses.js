@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import {
   container,
   box,
@@ -83,18 +84,16 @@ const FeaturedCourses = () => {
           <div className={content}>
             <img src={more} alt="site preview GIF" className={gif} />
             <ul className={list}>
-                <li>UX Design Fundamentals</li>
-                <li>Agile Project Management</li>
-                <li>Introduction to Google SEO</li>
-                <li>Using Python to Access Web Data</li>
-                <li>and more</li>
+              <li>UX Design Fundamentals</li>
+              <li>Agile Project Management</li>
+              <li>Introduction to Google SEO</li>
+              <li>Using Python to Access Web Data</li>
+              <li>and more</li>
             </ul>
           </div>
           <div className={buttons}>
             <button>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                See all courses
-              </a>
+              <Link to="/courses">See all courses</Link>
             </button>
           </div>
         </div>

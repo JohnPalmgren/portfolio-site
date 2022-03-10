@@ -4,9 +4,6 @@ import Layout from "../components/UI/Layout";
 import Video from "../components/UI/Video"
 import Header from "../components/homepage/Header";
 import Nav from "../components/homepage/Nav";
-import Projects from "../components/homepage/cards/Projects";
-import Writing from "../components/homepage/cards/Writing";
-import Courses from "../components/homepage/cards/Courses";
 import About from "../components/homepage/About";
 import Skills from "../components/homepage/Skills"
 import Footer from "../components/UI/Footer";
@@ -51,13 +48,10 @@ const IndexPage = () => {
       <Skills />
       <div ref={scrollToProjects}></div>
       <FeaturedProjects />
-      <Projects />
       <div ref={scrollToWriting}></div>
       <FeaturedWriting />
-      <Writing />
       <div ref={scrollToCourses}></div>
       <FeaturedCourses />
-      <Courses />
       <Footer />
     </Layout>
   );
