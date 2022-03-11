@@ -11,9 +11,9 @@ import cardGameImg from "../../../images/card-game.png";
 import pythonImg from "../../../images/python.jpg";
 import ComputerVisionImg from "../../../images/computer-vision.png";
 import weatherAppImg from "../../../images/weather-app.png";
-import colorImg from "../../../images/color.png"
-import reqResImg from "../../../images/req-res.png"
-import jamdownImg from "../../../images/jamdown.png"
+import colorImg from "../../../images/color.PNG"
+import reqResImg from "../../../images/req-res.PNG"
+import jamdownImg from "../../../images/jamdown.PNG"
 
 const projectsData = [
   {
