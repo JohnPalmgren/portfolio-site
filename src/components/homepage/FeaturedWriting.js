@@ -11,7 +11,7 @@ import {
 import flexbox from "../../images/writing4.jpg"
 import strictMode from "../../images/strictMode.png"
 import button from "../../images/button.png"
-import more from "../../images/moreWriting.jpg"
+import more from "../../images/moreWriting.png"
 
 const ProjectTemplate = ({ title, image, url }) => {
   return (

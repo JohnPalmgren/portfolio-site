@@ -14,7 +14,7 @@ import {
 import bootcamp from "../../images/BSU.jpg"
 import reactImage from "../../images/react.png"
 import styling from "../../images/styling.jpg"
-import more from "../../images/moreCourses.jpg"
+import more from "../../images/moreCourses.png"
 
 const ProjectTemplate = ({ title, institution, image, features }) => {
   return (

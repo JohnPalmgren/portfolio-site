@@ -21,7 +21,8 @@
 }
 
 .img {
-  width: 50%;
+    height: 300px;
+  /* width: 50%; */
   border-radius: 10px;
 }
 

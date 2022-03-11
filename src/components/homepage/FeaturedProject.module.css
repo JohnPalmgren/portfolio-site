@@ -15,10 +15,13 @@
 
 .content {
   display: flex;
+  justify-content: center;
 }
 
+/* add mobile view */
 .gif {
-  width: 50%;
+  height: 300px;
+  /* width: 50%; */
   border-radius: 10px;
 }
 
