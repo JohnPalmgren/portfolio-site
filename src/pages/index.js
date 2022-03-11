@@ -14,6 +14,7 @@ import FeaturedCourses from "../components/homepage/FeaturedCourses";
 const IndexPage = () => {
   const scrollToProjects = useRef();
   const scrollToAbout = useRef();
+  const scrollToSkills = useRef()
   const scrollToWriting = useRef();
   const scrollToCourses = useRef();
 
@@ -23,6 +24,10 @@ const IndexPage = () => {
 
   const aboutScrollEvent = () => {
     scrollToAbout.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const skillsScrollEvent = () => {
+    scrollToSkills.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const writingScrollEvent = () => {
@@ -39,12 +44,14 @@ const IndexPage = () => {
       <Nav
         projectScroll={projectScrollEvent}
         aboutScroll={aboutScrollEvent}
+        skillsScroll={skillsScrollEvent}
         writingScroll={writingScrollEvent}
         coursesScroll={coursesScrollEvent}
       />
       <Header aboutScroll={aboutScrollEvent} />
       <div ref={scrollToAbout}></div>
       <About />
+      <div ref={scrollToSkills}></div>
       <Skills />
       <div ref={scrollToProjects}></div>
       <FeaturedProjects />

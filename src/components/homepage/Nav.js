@@ -20,6 +20,9 @@ const Nav =(props) => {
         <button onClick={props.aboutScroll}>About</button>
       </li>
       <li>
+        <button onClick={props.skillsScroll}>Skills</button>
+      </li>
+      <li>
         <button onClick={props.projectScroll}>Projects</button>
       </li>
       <li>
