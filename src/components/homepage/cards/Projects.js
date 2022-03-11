@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { subtitle, list, listItem, hide } from "./sharedCardStyles.module.css";
+import ProjectItemCard from "./ProjectItemCard";
 
 import windBnbImg from "../../../images/wind-bnb.png";
 import foodAppImg from "../../../images/food-app.png";
@@ -10,9 +11,42 @@ import cardGameImg from "../../../images/card-game.png";
 import pythonImg from "../../../images/python.jpg";
 import ComputerVisionImg from "../../../images/computer-vision.png";
 import weatherAppImg from "../../../images/weather-app.png";
-import ProjectItemCard from "./ProjectItemCard";
+import colorImg from "../../../images/color.png"
+import reqResImg from "../../../images/req-res.png"
+import jamdownImg from "../../../images/jamdown.png"
 
 const projectsData = [
+  {
+    name: "Color Browser",
+    code: "https://github.com/JohnPalmgren/color-browser",
+    link: "https://johnpalmgren.github.io/color-browser/",
+    date: "2022",
+    languages: ["React", "JavaScript", "JSON", "CSS", "HTML"],
+    image: colorImg,
+  },
+  {
+    name: "REQ|RES RESTful API",
+    code: "https://github.com/JohnPalmgren/REQ-RES-REST-API",
+    link: "https://johnpalmgren.github.io/REQ-RES-REST-API/",
+    date: "2022",
+    languages: ["React", "JavaScript", "REST API", "CSS", "HTML"],
+    image: reqResImg,
+  },
+  {
+    name: "Jamdown Fusion",
+    code: "https://github.com/JohnPalmgren/JamdownFusion",
+    link: "hhttps://jamdownfusion.com/",
+    date: "2022",
+    languages: [
+      "React",
+      "JavaScript",
+      "REST API",
+      "Contentful CMS",
+      "CSS",
+      "HTML",
+    ],
+    image: jamdownImg,
+  },
   {
     name: "Holiday room finder",
     code: "https://github.com/JohnPalmgren/Windbnb#built-with",
@@ -99,7 +133,6 @@ const Projects = () => {
       setOnView(true);
     }
   }, [inView]);
-
 
   const projects = projectsData.map((item, i) => {
     const delay = changeDelay();

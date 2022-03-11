@@ -21,8 +21,8 @@ const ProjectItemCard = (props) => {
 
   let liveSite = props.link !== "none";
 
-  const languages = props.languages.map((item) => {
-    return <li key={Math.random()}>{item}</li>;
+  const languages = props.languages.map((item, index) => {
+    return <li key={index}>{item}</li>;
   });
 
   return (
