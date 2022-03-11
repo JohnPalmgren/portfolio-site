@@ -18,10 +18,8 @@
   justify-content: center;
 }
 
-/* add mobile view */
 .gif {
   height: 300px;
-  /* width: 50%; */
   border-radius: 10px;
 }
 
@@ -76,4 +74,17 @@
 .buttons button a {
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gif {
+    width: 80%;
+    height:auto;
+  }
 }
