@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby"
 import { container, box, content, gif, list, templateHeading, heading, buttons } from "./FeaturedProject.module.css";
-import jamdownGif from "../../images/jamdown.gif"
-import windbnbGif from "../../images/windbnb.gif"
-import canban from "../../images/canban.gif"
+import jamdownGif from "../../images/JamdownFusion.webm"
+import windbnbGif from "../../images/WindBnb.webm"
+import canban from "../../images/KanbanNinja.webm"
 import more from "../../images/more.png"
 
 const ProjectTemplate = ({title, image, features, live, github}) => {
@@ -12,7 +12,9 @@ const ProjectTemplate = ({title, image, features, live, github}) => {
       <div className={box}>
         <h2 className={templateHeading}>{title}</h2>
         <div className={content}>
-          <img src={image} alt="site preview GIF" className={gif} />
+          {/* <img src={image} alt="site preview GIF" className={gif} /> */}
+          <video src={image} width="600" height="300" autoPlay={true} loop muted >
+          </video>
           <ul className={list}>
             {features.map((item) => {
               return <li>{item}</li>;
@@ -26,7 +28,9 @@ const ProjectTemplate = ({title, image, features, live, github}) => {
             </a>
           </button>
           <button>
-            <a href={github} target="_blank" rel="noopener noreferrer">Github</a>
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              Github
+            </a>
           </button>
         </div>
       </div>
