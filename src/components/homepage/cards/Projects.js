@@ -42,8 +42,6 @@ const projectsData = [
       "JavaScript",
       "REST API",
       "Contentful CMS",
-      "CSS",
-      "HTML",
     ],
     image: jamdownImg,
   },

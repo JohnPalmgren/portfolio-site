@@ -52,7 +52,7 @@
     }
 
     .social-media {
-        width: 100px;
+        min-width: 135px;
     }
 
     .social-icon {

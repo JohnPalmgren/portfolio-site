@@ -44,6 +44,7 @@
 }
 
 .language-list {
+  flex-wrap: wrap;
   list-style: none;
   margin-top: 2rem;
   padding: 0;
@@ -56,6 +57,8 @@
 
 .language-list li {
   font-weight: bold;
+  margin-left: 5px;
+  text-align: center;
 }
 
 .languages-heading {
