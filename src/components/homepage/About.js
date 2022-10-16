@@ -6,31 +6,28 @@ const About = () => {
   return (
     <Fragment>
       <div className={background}></div>
-    <div className={flexContainer}>
+      <div className={flexContainer}>
         <div className={contentWrapper}>
           <h3 className={subtitle}>About me</h3>
           <p className={paragraph}>
-            My greatest passion in life is learning new things whether that's
-            programming languages, foreign languages, or learning about
-            philosophy and psychology. My programming journey started 2 years
-            ago when I started learning Python. I was immediately hooked and
-            loved the creativity and problem solving involved with building my
-            own tools. Since then I have discovered the world of web development
-            and I've fallen in love with building stuff for the web. I have
-            built web pages, games and web apps using a number of technologies.
-            I'm currently having lots of fun building things in React.
+            I'm a software developer who works with Angular, Typescript, Node,
+            and AWS. I also have experience with React and other web
+            technologies. Learning and self-development are important to me.
+            Whether that's learning new technologies or learning a foreign
+            language. When I'm not working I enjoy rock climbing, cycling,
+            swimming, and playing squash.
           </p>
 
           <h3 className={subtitle}>What I'm doing now</h3>
           <p className={paragraph}>
-            I'm currently doing a web development bootcamp with Bath Spa
-            University. When I'm not doing that I'm tinkering with my Raspberry
-            Pi: building a hifi system with album information displayed on screen.
+            I'm currently building a website in React that will help people who
+            want to learn English as a second language find resources that will
+            help them.
           </p>
         </div>
         <img alt="profile image" src={profileImg} className={image} />
       </div>
-      </Fragment>
+    </Fragment>
   );
 };
 

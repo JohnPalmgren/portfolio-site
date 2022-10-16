@@ -21,7 +21,7 @@ const Header = (props) => {
     <div className={flexContainer}>
       <div className={header}>
         <h1 className={title}>John Palmgren</h1>
-        <h2 className={subtitle}>Web Developer</h2>
+        <h2 className={subtitle}>Software Developer</h2>
         <a
           className={link}
           title="Github"

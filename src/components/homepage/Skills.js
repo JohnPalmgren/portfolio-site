@@ -17,16 +17,16 @@ const Skills = () => {
         <img src={createIcon} />
         <h2>Creativity</h2>
         <p>
-          I have a degree in Creative Writing where I honed my creative process.
-          Whether writing or coding I am confident in generating ideas and thinking
-          outside the box.
+          I have a degree in Creative Writing, where I honed my creative
+          process. Whether writing or coding, I am confident in generating ideas
+          and thinking outside the box.
         </p>
       </div>
       <div className={communication}>
         <img src={comIcon} />
         <h2>Communication</h2>
         <p>
-          Weather working as a manager or in a call centre I've always needed to
+          Whether working as a manager or in a call centre I've always needed to
           be an effective communicator. I have also written for a number of
           publications and currently write technical articles and tutorials
         </p>
